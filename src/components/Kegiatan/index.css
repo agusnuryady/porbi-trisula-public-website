@@ -1,0 +1,128 @@
+.kegiatanHeaderBox {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+    background-image: url(../img/programwp.jpg);
+    align-items: center;
+    justify-content: center;
+}
+
+.kegiatanHeaderText1 {
+    color: white;
+    font-size: 50px;
+    margin-top: 100px;
+}
+
+.kegiatanContentBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.kegiatanBoxItems {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 600px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    flex-direction: row;
+    transition: all 0.5s;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.kegiatanBoxItems:hover {
+    box-shadow: 0 0 20px 7px rgba(17, 63, 212, 0.2);
+    transition: all 0.5s;
+}
+
+.kegiatanBoxItems:hover .kegiatanItem {
+    transform: translateY(-130px);
+    transition: all 0.5s;
+}
+
+.kegiatanImage1 {
+    width: 100%;
+    height: 100%;
+}
+
+.kegiatanItem {
+    background-color: rgba(0, 0, 0, 0.473);
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    bottom: -130px;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.kegiatanButton {
+    cursor: pointer;
+    margin: 10px;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.bounce-2 {
+    animation-name: bounce-2;
+    animation-timing-function: ease;
+}
+@keyframes bounce-2 {
+    0%   { transform: translateY(0); }
+    30%  { transform: translateY(-5px); }
+    50%  { transform: translateY(0); }
+    100% { transform: translateY(0); }
+}
+
+.kegiatanItemText1 {
+    color: white;
+    font-size: 30px;
+    margin: 15px;
+}
+
+.kegiatanItemText2 {
+    color: white;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0;
+}
+
+.kegiatanItemText3 {
+    color: white;
+    margin: 5px;
+    font-size: 17px;
+    transition: all 0.5s;
+}
+
+.kegiatanIcon {
+    color: white;
+    margin: 5px;
+    transition: all 0.5s;
+}
+
+.kegiatanButton:hover .kegiatanItemText3 {
+    color: yellow;
+    transition: all 0.5s;
+}
+
+.kegiatanButton:hover .kegiatanIcon {
+    color: yellow;
+    transition: all 0.5s;
+}

@@ -1,0 +1,22 @@
+html, body {
+    height: 100vh;
+    position: relative;
+    background-color: #303030;
+}
+
+.main-container {
+    height: 100%;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding-bottom: 450px;
+}
+
+.content {
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
