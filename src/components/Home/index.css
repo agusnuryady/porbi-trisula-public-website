@@ -5,6 +5,13 @@
   height: 100%;
 }
 
+.sliderCustom {
+	position: relative;
+	width: 100%;
+	height: 800px;
+	overflow: hidden
+}
+
 .headerBox1 {
   align-items: center;
   justify-content: center;

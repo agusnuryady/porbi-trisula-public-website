@@ -83,6 +83,7 @@ class Home extends Component{
             autoplay={10000}
             nextButton={null}
             previousButton={null}
+            className="sliderCustom"
           >
             {headerSlide.map((item, index) => (
               <div 
