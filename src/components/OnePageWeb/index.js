@@ -36,6 +36,10 @@ import img1 from "../img/wp1.jpg";
 import img2 from "../img/wp2.jpg";
 import img3 from "../img/wp3.jpg";
 import logo from "../img/trisula.png";
+import qrcode1 from '../img/qrcode1.jpg'
+import qrcode2 from '../img/qrcode2.jpg'
+import qrcode3 from '../img/qrcode3.jpg'
+import qrcode4 from '../img/qrcode4.jpg'
 
 const classNames = ["wp1", "wp2", "wp3"];
 
@@ -198,9 +202,9 @@ class OnePage extends Component {
           <ul className="nav-opt">
             <li className="navli">
               <Link
-                activeClassName="selected"
+                activeClassName="active"
                 className="nav-link"
-                to="/Home"
+                to="/Beranda"
                 spy={true}
                 smooth={true}
                 duration={500}
@@ -210,7 +214,7 @@ class OnePage extends Component {
             </li>
             <li className="navli">
               <Link
-                activeClassName="selected"
+                activeClassName="active"
                 className="nav-link"
                 to="/Kegiatan"
                 spy={true}
@@ -222,7 +226,7 @@ class OnePage extends Component {
             </li>
             <li className="navli">
               <Link
-                activeClassName="selected"
+                activeClassName="active"
                 className="nav-link"
                 to="/Visi"
                 spy={true}
@@ -234,7 +238,7 @@ class OnePage extends Component {
             </li>
             <li className="navli">
               <Link
-                activeClassName="selected"
+                activeClassName="active"
                 className="nav-link"
                 to="/Gallery"
                 spy={true}
@@ -246,7 +250,7 @@ class OnePage extends Component {
             </li>
             <li className="navli">
               <Link
-                activeClassName="selected"
+                activeClassName="active"
                 className="nav-link"
                 to="/HubungiKami"
                 spy={true}
@@ -259,7 +263,7 @@ class OnePage extends Component {
           </ul>
         </nav>
         <div className="content">
-          <Element name="/Home" className="headerBox1">
+          <Element name="/Beranda" className="headerBox1">
             <Slider
               autoplay={10000}
               nextButton={null}
@@ -286,64 +290,68 @@ class OnePage extends Component {
               </div>
             </div>
           </Element>
-          <div className="contentBox">
-            <Element name="/Kegiatan" className="elementNav" />
-            <div className="headerBox">
-              <h1 className="headerText1">Kegiatan</h1>
-              <div className="gridLine1" />
-            </div>
-            <div className="contentItemActivity1">
-              <div className="activityBox">
-                <img src={img1} className="activityImg1" />
-                <p className="textContent1">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor
-                </p>
+          <Element className="contentBox">
+            <Element  name="/Kegiatan" className="contentItemActivity3" >
+              <div className="elementNav" />
+              <div className="headerBox">
+                <h1 className="headerText1">Kegiatan</h1>
+                <div className="gridLine1" />
               </div>
-              <div className="activityBox">
-                <img src={img3} className="activityImg1" />
-                <p className="textContent1">
-                  enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip
-                </p>
-              </div>
-              <div className="activityBox">
-                <img src={img2} className="activityImg1" />
-                <p className="textContent1">
-                  Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                </p>
-              </div>
-            </div>
-            <div className="contentItemActivity2">
-              <Element name="/Visi" className="elementNav" />
-              <div className="visionBox1">
-                <h1 className="headerText3">Visi</h1>
-                <p className="headerText2">
-                  "Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s."
-                </p>
-              </div>
-              <div className="visionBox2">
-                <h1 className="headerText3">Misi</h1>
-                <div className="headerText2">
-                  <p className="visionText1">
-                    1. Lorem Ipsum is simply dummy text of the printing
+              <div className="contentItemActivity1">
+                <div className="activityBox">
+                  <img src={img1} className="activityImg1" />
+                  <p className="textContent1">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor
                   </p>
-                  <p className="visionText1">
-                    2. Minim veniam quis nostrud exercitation ullamco
+                </div>
+                <div className="activityBox">
+                  <img src={img3} className="activityImg1" />
+                  <p className="textContent1">
+                    enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip
                   </p>
-                  <p className="visionText1">
-                    3. Lunt in culpa qui officia deserunt mollit anim id est
-                  </p>
-                  <p className="visionText1">
-                    4. Dolor in reprehenderit in voluptate velit
+                </div>
+                <div className="activityBox">
+                  <img src={img2} className="activityImg1" />
+                  <p className="textContent1">
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa
                   </p>
                 </div>
               </div>
-            </div>
-            <div className="contentItemActivity3">
-              <Element name="/Gallery" className="elementNav" />
+            </Element>
+            <Element name="/Visi" className="contentItemActivity3">
+              <div className="elementNav" />
+              <div className="contentItemActivity2">
+                <div className="visionBox1">
+                  <h1 className="headerText3">Visi</h1>
+                  <p className="headerText2">
+                    "Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s."
+                  </p>
+                </div>
+                <div className="visionBox2">
+                  <h1 className="headerText3">Misi</h1>
+                  <div className="headerText2">
+                    <p className="visionText1">
+                      1. Lorem Ipsum is simply dummy text of the printing
+                    </p>
+                    <p className="visionText1">
+                      2. Minim veniam quis nostrud exercitation ullamco
+                    </p>
+                    <p className="visionText1">
+                      3. Lunt in culpa qui officia deserunt mollit anim id est
+                    </p>
+                    <p className="visionText1">
+                      4. Dolor in reprehenderit in voluptate velit
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </Element>
+            <Element name="/Gallery" className="contentItemActivity3">
+              <div className="elementNav" />
               <div className="headerBox">
                 <h1 className="headerText1">Gelleri</h1>
                 <div className="gridLine1" />
@@ -355,9 +363,9 @@ class OnePage extends Component {
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="contentItemActivity3">
-              <Element name="/HubungiKami" className="elementNav" />
+            </Element>
+            <Element name="/HubungiKami" className="contentItemActivity3">
+              <div className="elementNav" />
               <div className="headerBox">
                 <h1 className="headerText1">Hubungi Kami</h1>
                 <div className="gridLine1" />
@@ -409,7 +417,7 @@ class OnePage extends Component {
                   </div>
                 </div>
               </div>
-            </div>
+            </Element>
             <div className="aboutBox3">
               <div className="aboutTextBox1">
                 <p className="aboutTextHeader1">Support Kami</p>
@@ -442,10 +450,25 @@ class OnePage extends Component {
                 <p className="aboutText1">29104-23090</p>
               </div>
             </div>
-            <div className="aboutBox1">
-              <div className="aboutBox4"></div>
+            <div className="aboutBox5">
+              <div className="aboutBox4">
+                <img src={qrcode1} className="qrCodeImg" />
+                <p className="aboutText4">OVO</p>
+              </div>
+              <div className="aboutBox4">
+                <img src={qrcode2} className="qrCodeImg" />
+                <p className="aboutText4">DANA</p>
+              </div>
+              <div className="aboutBox4">
+                <img src={qrcode3} className="qrCodeImg" />
+                <p className="aboutText4">GOPAY</p>
+              </div>
+              <div className="aboutBox4">
+                <img src={qrcode4} className="qrCodeImg" />
+                <p className="aboutText4">LINKAJA</p>
+              </div>
             </div>
-          </div>
+          </Element>
         </div>
         <div className="footerBox">
           <div className="footerItem1">
@@ -483,35 +506,56 @@ class OnePage extends Component {
             </div>
             <div className="footerContent3">
               <h2 className="footerText2">SITEMAP</h2>
-              <NavLink
+              <Link
                 activeClassName="selected"
                 className="footerText3"
-                to="/Event"
+                to="/Home"
+                spy={true}
+                smooth={true}
+                duration={500}
               >
-                Event
-              </NavLink>
-              <NavLink
+                Beranda
+              </Link>
+              <Link
                 activeClassName="selected"
                 className="footerText3"
                 to="/Kegiatan"
+                spy={true}
+                smooth={true}
+                duration={500}
               >
                 Kegiatan
-              </NavLink>
-              <NavLink
+              </Link>
+              <Link
+                activeClassName="selected"
+                className="footerText3"
+                to="/Visi"
+                spy={true}
+                smooth={true}
+                duration={500}
+              >
+                Visi & Misi
+              </Link>
+              <Link
                 activeClassName="selected"
                 className="footerText3"
                 to="/Gallery"
+                spy={true}
+                smooth={true}
+                duration={500}
               >
                 Gallery
-              </NavLink>
-              {/* <NavLink activeClassName="selected" className="footerText3" to="/MyProfile">My Profile</NavLink> */}
-              <NavLink
+              </Link>
+              <Link
                 activeClassName="selected"
                 className="footerText3"
-                to="/AboutUs"
+                to="/HubungiKami"
+                spy={true}
+                smooth={true}
+                duration={500}
               >
-                About Us
-              </NavLink>
+                Hubungi Kami
+              </Link>
             </div>
           </div>
           <div className="footerItem2">
