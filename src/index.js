@@ -14,6 +14,7 @@ import Gallery from './components/Gallery/index'
 import MyProfile from './components/MyProfile/index'
 import AboutUs from './components/AboutUs/index'
 import Login from './components/Login/index'
+import OnePage from './components/OnePageWeb/index';
 
 import Datadiri from './components/MyProfile/components/DataDiri/index'
 import Programku from './components/MyProfile/components/Programku/index'
@@ -25,7 +26,10 @@ import * as serviceWorker from './serviceWorker'
 ReactDOM.render(
     <BrowserRouter>
         <Switch>
-            <Route exact path={["/","/Event","/Kegiatan","/Gallery","/AboutUs","/Login"]}>
+            <Route exact path={["/"]} >
+                <Route exact path="/" component={OnePage} />
+            </Route>
+            <Route path={["/","/Event","/Kegiatan","/Gallery","/AboutUs","/Login"]}>
                 <BaseLayout>
                     <Route exact path="/" component={Home} />
                     <Route path="/Event" component={Event}/>

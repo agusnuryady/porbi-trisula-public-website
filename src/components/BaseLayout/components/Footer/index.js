@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import {NavLink} from 'react-router-dom'
 import './index.css'
 import logo from '../../../img/trisula.png'
-import {FaInstagram, FaFacebook, FaTwitter, FaYoutube, FaMapMarker, FaPhone, Fa} from 'react-icons/fa'
+import {FaInstagram, FaFacebook, FaTwitter, FaYoutube, FaMapMarker, FaPhone} from 'react-icons/fa'
 import {IoMdMail} from 'react-icons/io'
 
 export default class Footer extends Component {
