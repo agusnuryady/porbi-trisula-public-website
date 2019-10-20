@@ -31,7 +31,7 @@ import Gallerys from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
 import img4 from "../img/eventwp.jpg";
 import img5 from "../img/trisula.png";
-import Icon from "../../components/img/trisula_icon.png";
+import Icon from "../../components/img/trikarsa_logo.png";
 import img1 from "../img/wp1.jpg";
 import img2 from "../img/wp2.jpg";
 import img3 from "../img/wp3.jpg";
@@ -196,8 +196,9 @@ class OnePage extends Component {
     return (
       <div className="main-container">
         <nav className="Navbar navbarBox">
-          <Link exact to="/Home" spy={true} smooth={true} duration={500}>
-            <img src={Icon} alt="Probi Trisula Logo" className="navLogo" />
+          <Link exact to="/Beranda" spy={true} smooth={true} duration={500} className="navLogoBox" >
+            <img src={Icon} alt="Trikarsa Bina Bangsa" className="navLogo1" />
+            <h1 className="navLogoText">TRIKARSA BINA BANGSA</h1>
           </Link>
           <ul className="nav-opt">
             <li className="navli">
@@ -392,7 +393,7 @@ class OnePage extends Component {
                   </div>
                   <div className="aboutTextBox1">
                     <IoMdMail className="aboutIcon1" />
-                    <p className="aboutText1">trisulabinabangsa@gmail.co.id</p>
+                    <p className="aboutText1">trikarsabinabangsa@gmail.co.id</p>
                   </div>
                 </div>
                 <div className="aboutBox2">
@@ -401,19 +402,19 @@ class OnePage extends Component {
                   </div>
                   <div className="aboutTextBox1">
                     <FaFacebook className="aboutIcon1" />
-                    <p className="aboutText1">Yayasan Trisula Bina Bangsa</p>
+                    <p className="aboutText1">Yayasan Trikarsa Bina Bangsa</p>
                   </div>
                   <div className="aboutTextBox1">
                     <FaInstagram className="aboutIcon1" />
-                    <p className="aboutText1">@trisulabinabangsa</p>
+                    <p className="aboutText1">@trikarsabinabangsa</p>
                   </div>
                   <div className="aboutTextBox1">
                     <FaYoutube className="aboutIcon1" />
-                    <p className="aboutText1">Yayasan Trisula Bina Bangsa</p>
+                    <p className="aboutText1">Yayasan Trikarsa Bina Bangsa</p>
                   </div>
                   <div className="aboutTextBox1">
                     <FaLinkedin className="aboutIcon1" />
-                    <p className="aboutText1">@trisulabinabangsa</p>
+                    <p className="aboutText1">@trikarsabinabangsa</p>
                   </div>
                 </div>
               </div>
@@ -432,22 +433,22 @@ class OnePage extends Component {
               <div className="aboutTextBox1">
                 <p className="aboutText2">Bank BCA</p>
                 <p className="aboutText3">:</p>
-                <p className="aboutText1">11801-23090</p>
+                <p className="aboutText1">11801-23090 (Yayasan Trikarsa Bina Bangsa) </p>
               </div>
               <div className="aboutTextBox1">
                 <p className="aboutText2">Bank Mandiri</p>
                 <p className="aboutText3">:</p>
-                <p className="aboutText1">52343-23090</p>
+                <p className="aboutText1">52343-23090 (Yayasan Trikarsa Bina Bangsa) </p>
               </div>
               <div className="aboutTextBox1">
                 <p className="aboutText2">Bank BRI</p>
                 <p className="aboutText3">:</p>
-                <p className="aboutText1">91843-23090</p>
+                <p className="aboutText1">91843-23090 (Yayasan Trikarsa Bina Bangsa) </p>
               </div>
               <div className="aboutTextBox1">
                 <p className="aboutText2">Bank Mega</p>
                 <p className="aboutText3">:</p>
-                <p className="aboutText1">29104-23090</p>
+                <p className="aboutText1">29104-23090 (Yayasan Trikarsa Bina Bangsa) </p>
               </div>
             </div>
             <div className="aboutBox5">
@@ -488,20 +489,18 @@ class OnePage extends Component {
               </div>
             </div>
             <div className="footerContent2">
-              <h2 className="footerText2">CONTACT US</h2>
+              <h2 className="footerText2">LEGAL FORMAL</h2>
               <div className="footerContactBox">
-                <FaMapMarker className="footerIcons" />
+                <FaAngleRight className="footerIcons" />
                 <p className="footerText3">
-                  11850 Duri Semanan, Kalideres, West Jakarta
+                  Akta Pendirian: Dr. Hotman Peres, SH Nomor 31 tanggal 1 November 2019 tentang Pendirian Yayasan Trikarsa Bina Bangsa (TBB)
                 </p>
               </div>
               <div className="footerContactBox">
-                <FaPhone className="footerIcons" />
-                <p className="footerText3">+62-822-1622-0822</p>
-              </div>
-              <div className="footerContactBox">
-                <IoMdMail className="footerIcons" />
-                <p className="footerText3">porbi.trisula@example.co.id</p>
+                <FaAngleRight className="footerIcons" />
+                <p className="footerText3">
+                  Keputusan Menteri Hukum dan HAM Republik Indonesia Nomor C-xxxx.HT.01.02/Th.2019 tanggal 1 November 2019 tentang Pengesahan Akta Pendirian Yayasan Trikarsa Bina Bangsa.
+                </p>
               </div>
             </div>
             <div className="footerContent3">
@@ -509,7 +508,7 @@ class OnePage extends Component {
               <Link
                 activeClassName="selected"
                 className="footerText3"
-                to="/Home"
+                to="/Beranda"
                 spy={true}
                 smooth={true}
                 duration={500}
